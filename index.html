@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makemytrip Hero Section</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #0288d1;
+            color: #fff;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('https://via.placeholder.com/1920x600') no-repeat center/cover;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Search Bar */
+        .search-bar {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 800px;
+        }
+
+        .search-bar form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .search-bar input, .search-bar select, .search-bar button {
+            flex: 1;
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-bar button {
+            background-color: #0288d1;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        .search-bar button:hover {
+            background-color: #026fa1;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .search-bar form {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="logo">
+            <h2>Makemytrip</h2>
+        </div>
+        <div class="nav-links">
+            <a href="#">Flights</a>
+            <a href="#">Hotels</a>
+            <a href="#">Holiday Packages</a>
+            <a href="#">Trains</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Plan Your Perfect Trip</h1>
+
+        <!-- Search Bar -->
+        <div class="search-bar">
+            <form>
+                <input type="text" placeholder="From" required>
+                <input type="text" placeholder="To" required>
+                <input type="date" placeholder="Departure" required>
+                <input type="date" placeholder="Return (Optional)">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
